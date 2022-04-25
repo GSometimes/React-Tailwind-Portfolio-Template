@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { navData } from '../data/NavData';
-import { Link } from 'react-scroll';
+import React, { useState } from 'react'
+import { navData } from '../data/NavData'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   const handleClick = () => {
-    setOpen(!open);
-  };
+    setOpen(!open)
+  }
   return (
     <header className='font-mono py-4 fixed w-full top-0 z-50 bg-zinc-900 text-slate-200'>
       <div className='container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'>
@@ -16,8 +16,7 @@ const Navbar = () => {
           {navData.map((item, index) => (
             <li
               className='hover:decoration-teal-600 hover:underline hover:underline-offset-4 decoration-2 cursor-pointer'
-              key={index}
-            >
+              key={index}>
               <Link to={item.name} smooth={true} offset={-125} duration={700}>
                 {item.title}
               </Link>
@@ -39,36 +38,32 @@ const Navbar = () => {
               </button>
             </li>
           </ul>
-          <div onClick={handleClick} class='z-10'>
+          <div onClick={handleClick} className='z-10'>
             {!open ? (
               <svg
-                class='w-6 h-6 z-10'
+                className='w-6 h-6 z-10'
                 fill='none'
                 stroke='currentColor'
                 viewBox='0 0 24 24'
-                xmlns='http://www.w3.org/2000/svg'
-              >
+                xmlns='http://www.w3.org/2000/svg'>
                 <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  stroke-width='2'
-                  d='M4 6h16M4 12h16M4 18h16'
-                ></path>
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='M4 6h16M4 12h16M4 18h16'></path>
               </svg>
             ) : (
               <svg
-                class='w-6 h-6 z-10'
+                className='w-6 h-6 z-10'
                 fill='none'
                 stroke='currentColor'
                 viewBox='0 0 24 24'
-                xmlns='http://www.w3.org/2000/svg'
-              >
+                xmlns='http://www.w3.org/2000/svg'>
                 <path
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                  stroke-width='2'
-                  d='M6 18L18 6M6 6l12 12'
-                ></path>
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='M6 18L18 6M6 6l12 12'></path>
               </svg>
             )}
           </div>
@@ -78,21 +73,26 @@ const Navbar = () => {
               !open
                 ? 'hidden'
                 : 'absolute top-0 left-0 w-full h-screen bg-zinc-900 flex flex-col justify-center items-center'
-            }
-          >
+            }>
             {navData.map((item, index) => (
               <li
                 className=' py-6 text-4xl hover:decoration-teal-600 hover:underline hover:underline-offset-4 decoration-2'
-                key={index}
-              >
-                {item.title}
+                key={index}>
+                <Link
+                  to={item.name}
+                  smooth={true}
+                  offset={-125}
+                  duration={700}
+                  onClick={handleClick}>
+                  {item.title}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

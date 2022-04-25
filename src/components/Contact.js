@@ -20,7 +20,7 @@ const Contact = () => {
         </h1>
       </div>
       {ContactData.map((item, index) => (
-        <div>
+        <div key={index}>
           <p
             data-aos='fade-up'
             data-aos-duration='500'
