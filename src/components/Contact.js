@@ -6,7 +6,7 @@ const Contact = () => {
     <div
       name='contact'
       id='projects'
-      className='container mx-auto px-8 md:px-10 lg:px-20 my-24 md:my-48 w-full font-mono text-slate-200 flex flex-col justify-center items-center'
+      className='container mx-auto px-8 md:px-10 lg:px-20 md:my-48 w-full h-[500px] font-mono text-slate-200 flex flex-col justify-center items-center'
     >
       <div>
         <h1

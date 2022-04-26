@@ -8,6 +8,7 @@ const Navbar = () => {
   const handleClick = () => {
     setOpen(!open);
   };
+
   return (
     <header className='font-mono py-4 fixed w-full top-0 z-50 bg-zinc-900 text-slate-200'>
       <div className='container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'>
@@ -35,7 +36,14 @@ const Navbar = () => {
           <ul className='z-50'>
             <li>
               <button className='text-sm px-6 py-2 bg-teal-600 hover:bg-teal-700 font-bold font-mono rounded'>
-                Contact
+                <Link
+                  onClick={() => setOpen(false)}
+                  to='contact'
+                  smooth={true}
+                  duration={700}
+                >
+                  Contact
+                </Link>
               </button>
             </li>
           </ul>
@@ -85,7 +93,15 @@ const Navbar = () => {
                 className=' py-6 text-4xl hover:decoration-teal-600 hover:underline hover:underline-offset-4 decoration-2'
                 key={index}
               >
-                {item.title}
+                <Link
+                  onClick={() => setOpen(false)}
+                  to={item.name}
+                  smooth={true}
+                  offset={-125}
+                  duration={700}
+                >
+                  {item.title}
+                </Link>
               </li>
             ))}
           </ul>

@@ -7,7 +7,7 @@ const Hero = () => {
       name='home'
       className='container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full h-screen'
     >
-      <div className='max-w-[1280px] mx-auto px-8 flex flex-col justify-center h-full font-mono'>
+      <div className='max-w-[1280px] mx-auto flex flex-col justify-center h-full font-mono'>
         <p
           data-aos-once='true'
           data-aos='fade-up'
@@ -44,7 +44,7 @@ const Hero = () => {
           I'm a frontend developer specializing in building modern, beautiful
           web experiences.
         </p>
-        <div className='w-full flex justify-center md:justify-start gap-4'>
+        <div className='w-full flex justify-start gap-4'>
           <button
             data-aos='fade-up'
             data-aos-duration='500'
