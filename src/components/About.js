@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       name='about'
-      className='container flex flex-col md:flex-row justify-between items-center mx-auto px-8 py-10 md:px-10 lg:px-20 w-full font-mono text-slate-200 gap-8 outline outline-offset-2 outline-slate-200'
+      className='container flex flex-col md:flex-row justify-between items-center mx-auto px-8 py-10 md:px-10 lg:px-20 max-w-[1160px] font-mono text-slate-200 gap-8'
     >
       <div
         data-aos='fade-up'
@@ -18,7 +18,7 @@ const About = () => {
         </h1>
         {AboutData.map((item, index) => (
           <div key={index}>
-            <p className='my-8 w-full max-w-3xl leading-normal'>
+            <p className='my-8 mx-auto w-full max-w-5xl leading-normal'>
               {item.paragraph}
             </p>
           </div>

@@ -5,16 +5,16 @@ const Hero = () => {
   return (
     <div
       name='home'
-      className='container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full h-screen'
+      className='container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 max-w-[1160px] h-screen'
     >
-      <div className='max-w-[1280px] mx-auto flex flex-col justify-center h-full font-mono'>
+      <div className='mx-auto flex flex-col justify-center h-full font-mono'>
         <p
           data-aos-once='true'
           data-aos='fade-up'
           data-aos-duration='500'
           className='text-teal-600'
         >
-          Hi, my name is
+          Hi, my name is,
         </p>
         <h1
           data-aos='fade-up'
@@ -50,7 +50,7 @@ const Hero = () => {
             data-aos-duration='500'
             data-aos-delay='200'
             data-aos-once='true'
-            className='px-8 py-4 bg-teal-600 hover:bg-teal-700 text-slate-200 font-bold mt-12 flex items-center space-x-3 font-mono rounded text-center text-sm'
+            className='px-8 py-4 bg-teal-600 hover:bg-teal-700 text-slate-200 font-bold mt-12 flex items-center space-x-3 font-mono rounded'
           >
             <Link to='work' smooth={true} duration={700} offset={-125}>
               My Work
@@ -58,7 +58,7 @@ const Hero = () => {
           </button>
           <a
             href='https://drive.google.com/file/d/1f0kOI0jBmxmA_I8b1LkIOoDGSWdyQQHa/view'
-            className='px-8 py-4 bg-teal-600 hover:bg-teal-700 text-slate-200 font-bold mt-12 flex items-center space-x-3 font-mono rounded text-center text-sm'
+            className='px-8 py-4 bg-teal-600 hover:bg-teal-700 text-slate-200 font-bold mt-12 flex items-center space-x-3 font-mono rounded'
             target='_blank'
             rel='noopener noreferrer'
             data-aos='fade-up'
