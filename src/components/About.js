@@ -17,8 +17,8 @@ const About = () => {
           About
         </h1>
         {AboutData.map((item, index) => (
-          <div>
-            <p key={index} className='my-8 w-full max-w-3xl leading-normal'>
+          <div key={index}>
+            <p className='my-8 w-full max-w-3xl leading-normal'>
               {item.paragraph}
             </p>
           </div>
@@ -32,7 +32,7 @@ const About = () => {
         data-aos-once='true'
       >
         <img
-          class='w-[300px] mx-auto outline outline-offset-2 outline-slate-200'
+          className='w-[300px] mx-auto outline outline-offset-2 outline-slate-200'
           src='https://res.cloudinary.com/dvug8hy5k/image/upload/v1650905845/saman-taheri-MXMs8q2OjeA-unsplash-min_zfp3ro.jpg'
           alt='Celebrating your accomplishment. Keep pushing forward.'
         />
