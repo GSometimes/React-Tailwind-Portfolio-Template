@@ -19,7 +19,7 @@ const Work = () => {
         </h1>
       </div>
       {/* <div className='flex items-center justify-center flex-wrap my-8 outline outline-offset-2 outline-slate-200'> */}
-      <div class='grid justify-center md:grid-cols-2 gap-5 lg:gap-7 my-10'>
+      <div class='container grid justify-center grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-7 my-10'>
         {ProjectData.map((project) => (
           <a
             data-aos='fade-up'
@@ -28,9 +28,10 @@ const Work = () => {
             data-aos-once='true'
             href={project.link}
             key={project.image}
-            className="hover:bg-teal-600 hover:bg-opacity-50 border border-teal-600 rounded"
+            className='hover:bg-teal-600 hover:bg-opacity-50 border-2 border-teal-600 rounded'
           >
-            <div className='max-w-xs md:max-w-none overflow-hidden'>
+            {/* max-w-xs  */}
+            <div className='md:max-w-none overflow-hidden'>
               <img
                 alt='gallery'
                 className='h-56 lg:h-60 w-full object-cover'
@@ -43,8 +44,7 @@ const Work = () => {
                 <h1 className='text-xl tracking-widest font-medium text-white my-1'>
                   {project.title}
                 </h1>
-                <p className="leading-relaxed">{project.description}</p>
-                
+                <p className='leading-relaxed'>{project.description}</p>
               </div>
             </div>
           </a>
