@@ -5,6 +5,6 @@ export const AboutData = [
   },
   {
     paragraph:
-      'I am a creative frontend develop who is proficient in React and Tailwind CSS and specializes in creating modern, engaging design. I build a foundation utilizing simple ingredients that incorporate all the senses resulting in a hand-crafted experience, making a lasting impression.',
+      'I am a creative frontend developer who is proficient in React and Tailwind CSS and specializes in creating modern, engaging design. I build a foundation utilizing simple ingredients that incorporate all the senses resulting in a hand-crafted experience, making a lasting impression.',
   },
 ];
