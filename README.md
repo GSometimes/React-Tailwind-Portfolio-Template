@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# React x Tailwind CSS Portfolio Template Preview
+
+You can view a live version of the template [here](https://react-tailwind-portfolio-template.netlify.app/).
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
