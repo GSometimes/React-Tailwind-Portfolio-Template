@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div
       name='home'
-      className='container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 max-w-[1160px] h-screen'
+      className='container flex justify-between items-center mx-auto px-8 md:px-10 lg:px-24 max-w-[1160px] h-screen'
     >
       <div className='mx-auto flex flex-col justify-center h-full font-mono'>
         <p

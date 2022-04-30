@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <header className='font-mono py-4 fixed w-full top-0 z-50 bg-zinc-900 text-slate-200'>
-      <div className='container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full'>
+      <div className='container flex justify-between items-center mx-auto px-8 md:px-10 lg:px-24 max-w-[1160px]'>
         <div className='text-2xl text-teal-600 z-50'>GS</div>
         <ul className='hidden md:flex space-x-6 items-center divide-teal-600'>
           {navData.map((item, index) => (

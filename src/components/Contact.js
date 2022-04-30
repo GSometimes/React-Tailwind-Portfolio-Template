@@ -3,12 +3,10 @@ import { ContactInfo } from '../data/ConactInfo';
 
 const Contact = () => {
   return (
-    // <div
-    //   name='contact'
-    //   id='projects'
-    //   className='container mx-auto px-8 md:px-10 lg:px-20 md:my-48 max-w-[1160px] h-[500px] font-mono text-slate-200 flex flex-col justify-center items-center'
-    // >
-    <div className='container flex flex-col mx-auto px-8 py-10 md:px-10 lg:px-20 h-[500px] max-w-[1160px] font-mono text-slate-200 gap-8 my-24'>
+    <div
+      name='contact'
+      className='container flex flex-col mx-auto px-8 py-10 md:px-10 lg:px-20 h-[500px] max-w-[1160px] font-mono text-slate-200 gap-8 my-24'
+    >
       <div>
         <h1
           data-aos='fade-up'
@@ -34,6 +32,10 @@ const Contact = () => {
       <div className='container grid justify-center grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-7'>
         {ContactInfo.map((item, index) => (
           <a
+            data-aos='fade-up'
+            data-aos-duration='500'
+            data-aos-delay='250'
+            data-aos-once='true'
             key={index}
             href={item.link}
             className='tracking-widest text-sm font-semibold hover:bg-teal-600 hover:bg-opacity-30 border-2 border-teal-600 rounded'
@@ -51,37 +53,6 @@ const Contact = () => {
           </a>
         ))}
       </div>
-      {/* <h1 className='text-slate-200'>{line}</h1> */}
-      {/* {ContactData.map((item, index) => (
-        <div key={index}>
-          <p
-            data-aos='fade-up'
-            data-aos-duration='500'
-            data-aos-delay='200'
-            data-aos-once='true'
-            key={index}
-            className='my-8 w-full max-w-3xl leading-normal'
-          >
-            {item.line}
-          </p>
-          <div
-            data-aos='fade-up'
-            data-aos-duration='500'
-            data-aos-delay='250'
-            data-aos-once='true'
-            className='w-full flex justify-center'
-          >
-            <a
-              href={item.email}
-              className='px-8 py-4 bg-teal-600 hover:bg-teal-700 text-slate-200 font-bold flex items-center space-x-3 font-mono rounded'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Say Hello
-            </a>
-          </div>
-        </div>
-      ))} */}
     </div>
   );
 };
